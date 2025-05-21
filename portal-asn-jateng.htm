@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal Aplikasi Kepegawaian ASN Pemprov Jateng</title>
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lambang_Provinsi_Jawa_Tengah.svg/64px-Lambang_Provinsi_Jawa_Tengah.svg.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background-color: #e11d48; /* Merah khas Jateng */
+      color: white;
+    }
+    header img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #f3f4f6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    .open-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover .open-button {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgItMW-abdYGZxs_O5z5LsJG9LbwfYErxdxlp6gWIxEq2UPW8m08U9s0Xt0exCfezPFQ9eu1oTlk2rmnIPaFOkz3HRushBitrlx_6iuoN51LWImFfvCjfXcn7KpwQ6oBvdj4roKJGkGOms6CLcn5UwrBuMPL3KlYc0dx7a0pQCx_BvqVrUo5mh-3g/w287-h320/Logo%20Provinsi%20Jawa%20Tengah.png" alt="Logo Provinsi Jawa Tengah">
+  <h1>Portal Aplikasi Kepegawaian ASN</h1>
+  <p>Akses berbagai layanan kepegawaian ASN Pemprov Jateng dalam satu tempat</p>
+</header>
+
+<main class="grid">
+  <div class="card">
+    <h2>Email Kedinasan</h2>
+    <p>Link login akun email kedinasan @asn.jatengprov.go.id (untuk menerima kode OTP saat login ke SIASN dan e-Presensi)</p>
+    <a href="https://asn.jatengprov.go.id:8443/" class="open-button" target="_blank">Buka</a>
+  </div>
+
+  <div class="card">
+    <h2>Aplikasi SIASN</h2>
+    <p>Link login ke akun Sistem Informasi ASN Jateng (perlu kode OTP dari Email Kedinasan)</p>
+    <a href="http://siasn.jatengprov.go.id/" class="open-button" target="_blank">Buka</a>
+  </div>
+
+  <div class="card">
+    <h2>Aplikasi e-Presensi</h2>
+    <p>Link login ke akun Sistem Presensi Provinsi Jawa Tengah untuk melihat realtime dan unduh rekap bulanan (perlu kode OTP dari Email Kedinasan)</p>
+    <a href="https://presensi.bkd.jatengprov.go.id/v3/" class="open-button" target="_blank">Buka</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Portal Aplikasi Kepegawaian ASN Pemprov Jateng. Dibuat dengan ❤️ oleh Noval Ardian Putra.
+</footer>
+
+</body>
+</html>
